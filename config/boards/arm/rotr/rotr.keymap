@@ -16,12 +16,12 @@
 
 		default_layer {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			ledoverride;
-			r = <255>;
-			g = <255>;
-			b = <255>;
+			r = <200>;
+			g = <200>;
+			b = <200>;
 		};
 		one {
 			//PREV | PLAY/PAUSE | NEXT
@@ -35,7 +35,7 @@
 		two {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp LEFT &lt 4 SPACE &kp RIGHT>;
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
 			ledoverride;
 			r = <45>;
 			g = <66>;
@@ -43,9 +43,9 @@
 		};
 		three {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			bindings = <&inc_dec_kp PG_DN PG_UP>;
 			ledoverride;
-			r = <191>;
+			r = <115>;
 			g = <11>;
 			b = <11>;
 		};
