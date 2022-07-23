@@ -4,10 +4,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 &inc_dec_kp {
-	triggers-per-rotation = <12>;
+	triggers-per-rotation = <10>;
 };
 &def_lshft {
-	triggers-per-rotation = <12>;
+	triggers-per-rotation = <10>;
 };
 
 / {
@@ -34,7 +34,7 @@
 		};
 		two {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp LEFT &lt 4 SPACE &kp RIGHT>;
+			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
 			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
 			ledoverride;
 			r = <45>;
@@ -43,7 +43,8 @@
 		};
 		three {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&inc_dec_kp PG_DN PG_UP>;
+			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
+			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
 			ledoverride;
 			r = <115>;
 			g = <11>;
