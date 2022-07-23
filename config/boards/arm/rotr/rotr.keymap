@@ -44,7 +44,7 @@
 		three {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp DOWN &lt 4 SPACE &kp UP>;
-			sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+			sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
 			ledoverride;
 			r = <0>;
 			g = <15>;
