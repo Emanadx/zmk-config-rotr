@@ -26,11 +26,29 @@
 		one {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
-			sensor-bindings = <&inc_dec_kp DOWN UP>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			ledoverride;
+			r = <0>;
+			g = <0>;
+			b = <0>;
+		};
+		two {
+			//PREV | PLAY/PAUSE | NEXT
+			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
+			sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
 			ledoverride;
 			r = <45>;
 			g = <66>;
 			b = <115>;
+		};
+		three {
+			//PREV | PLAY/PAUSE | NEXT
+			bindings = <&kp DOWN &lt 4 C_PP &kp UP>;
+			sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+			ledoverride;
+			r = <80>;
+			g = <11>;
+			b = <11>;
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
