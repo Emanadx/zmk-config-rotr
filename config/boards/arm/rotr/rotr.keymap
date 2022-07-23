@@ -43,12 +43,12 @@
 		};
 		three {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp DOWN &lt 4 C_PP &kp UP>;
+			bindings = <&kp DOWN &lt 4 SPACE &kp UP>;
 			sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
 			ledoverride;
-			r = <80>;
-			g = <11>;
-			b = <11>;
+			r = <0>;
+			g = <15>;
+			b = <200>;
 		};
 		shift {
 			//PREV | PLAY/PAUSE | NEXT
