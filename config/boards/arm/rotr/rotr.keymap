@@ -47,10 +47,10 @@
 		two {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
-			sensor-bindings = <&inc_dec_kp_2 UP DOWN>;
+			sensor-bindings = <&inc_dec_kp_2 DOWN UP>;
 			ledoverride;
-			r = <200>;
-			g = <15>;
+			r = <255>;
+			g = <10>;
 			b = <0>;
 		};
 		three {
