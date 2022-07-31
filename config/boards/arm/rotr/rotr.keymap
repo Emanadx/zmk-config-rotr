@@ -18,8 +18,8 @@
 		compatible = "zmk,behavior-macro";
 		#binding-cells = <0>;
 		bindings
-			= <&macro_tap_time 10>
-			  ,<&macro_tap &kp LEFT_WIN &kp LEFT_ALT &kp G>
+			= <&macro_tap_time 500>
+			  ,<&kp LEFT_WIN &kp LEFT_ALT &kp G>
         };
     };
 };
