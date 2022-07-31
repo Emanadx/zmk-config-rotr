@@ -11,6 +11,15 @@
             triggers-per-rotation = <60>;
             #sensor-binding-cells = <2>;
             
+ / {
+	macros {
+		capture_prev_30s: capture_prev_30s {
+		label = "Game_bar_capture_prev_30s";
+		compatible = "zmk,behavior-macro";
+		#binding-cells = <0>;
+		bindings
+			= <&macro_tap_time 10>
+			  ,<&macro_tap &kp LEFT_WIN &kp LEFT_ALT &kp G>
         };
     };
 };
@@ -28,7 +37,7 @@
 
 		default_layer {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
+			bindings = <&kp C_PREV &lt 4 &capture_prev_30s &kp C_NEXT>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 			ledoverride;
 			r = <150>;
